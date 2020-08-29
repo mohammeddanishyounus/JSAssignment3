@@ -6,20 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
 </head>
 
 <body>
-    <!-- <a id="link" onclick="link()" href="">link</a> -->
+    <!-- Chapter 43-48 -->
+    <!-- //1
+    <a id="link" onclick="link()" href="">link</a> -->
+    
+    <!-- //2
     <img id="img" onclick="click1()" src="images/1.png" alt="1">
     <img id="img" onclick="click1()" src="images/2.png" alt="2">
     <img id="img" onclick="click1()" src="images/3.png" alt="3">
-    <img id="img" onclick="click1()" src="images/4.jpg" alt="4">
+    <img id="img" onclick="click1()" src="images/4.jpg" alt="4"> -->
     
-    
-    
-    
+    <!-- //3
+    <table>
+      <tr>
+          <th> Index </th>
+          <th> Name </th>
+          <th> Class </th>
+      </tr>
+      <tr>
+          <td> 0 </td>
+          <td> Danish </td>
+          <td> Science </td>
+          <td><button onclick="deleteRow()" id="rec0">Delete</button></td>
+      </tr>
+      <tr>
+          <td> 1 </td>
+          <td> Younus </td>
+          <td> Philisophy </td>
+          <td><button onclick="deleteRow()" id="rec0">Delete</button></td>
+      </tr>
+      <tr>
+        <td> 2 </td>
+        <td> Arsalan </td>
+        <td> English </td>
+        <td><button onclick="deleteRow()" id="rec0">Delete</button></td>
+    </tr>
+    <tr>
+        <td> 3 </td>
+        <td> Waqar </td>
+        <td> Math </td>
+        <td><button onclick="deleteRow()" id="rec0">Delete</button></td>
+    </tr>
+    <tr>
+        <td> 4 </td>
+        <td> Ghani </td>
+        <td> Urdu </td>
+        <td><button onclick="deleteRow()" id="rec0">Delete</button></td>
+    </tr>
+  </table> -->
 
-    <script src="app.js"></script>
+    <!-- //4
+    <img src="images/1.png" alt="" onmouseover="src='images/2.png'" onmouseout="src='images/1.png'">
+    <img src="images/1.png" alt="" id="image" onmouseover="onMouseOver()" onmouseout="onMouseOut()">  -->
+      
+        <!-- //5
+    <div style="text-align: center;">
+    <h1 style="text-align: center;" id="counter">0</h1> <br>
+    <button id="inc" onclick="inc()">Increase</button> 
+    <button id="dec" onclick="dec()">Decrease</button>
+    </div> -->
+
+    <!-- Chapter 49-52 -->
+    <!-- //1
+     Signup Form <br>
+        Student Name: <input type="text" name="Name:" id="stuName"  > <br>
+        Father's Name: <input type="text" name="Father'sName:" id="fatName"> <br>
+        Email Address: <input type="text" name="EmailAddress:" id="email"> <br>
+        Mobile Number: <input type="number" name="MobileNumber" id="mobNo"> <br>
+      <button id="sub" onclick="submit()">Submit</button> -->
+    
+      <!-- //2
+      <p id="para"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+         <a href="javascript:void(0);" onclick="paragraph()">Read more</a></p> -->
+
+    <!-- //3
+    <table>
+      <tr>
+          <th> Index </th>
+          <th> Name </th>
+          <th> Class </th>
+      </tr>
+      <tr>
+          <td id="index1"> 1 </td>
+          <td id="name1"> Danish </td>
+          <td id="class1"> Science </td>
+          <td><button onclick="deleteRow('1')" id="del1">Delete</button></td>
+          <td><button onclick="EditRow('1')" id="edit1">Edit</button></td>
+          <td><button onclick="SaveRow('1')" id="save1">Save</button></td>
+      </tr>
+      <tr>
+          <td id="index2"> 2 </td>
+          <td id="name2"> Younus </td>
+          <td id="class2"> Philisophy </td>
+          <td><button onclick="deleteRow('2')" id="del2">Delete</button></td>
+          <td><button onclick="EditRow('2')" id="edit2">Edit</button></td>
+          <td><button onclick="SaveRow('2')" id="save2">Save</button></td>
+      </tr>
+      <tr>
+        <td id="index3"> 3 </td>
+        <td id="name3"> Arsalan </td>
+        <td id="class3"> English </td>
+        <td><button onclick="deleteRow('3')" id="del3">Delete</button></td>
+        <td><button onclick="EditRow('3')" id="edit3">Edit</button></td>
+        <td><button onclick="SaveRow('3')" id="save3">Save</button></td>
+    </tr>
+    <tr>
+        <td id="index4"> 4 </td>
+        <td id="name4"> Waqar </td>
+        <td id="class4"> Math </td>
+        <td><button onclick="deleteRow('4')" id="del4">Delete</button></td>
+        <td><button onclick="EditRow('4')" id="edit4">Edit</button></td>
+        <td><button onclick="SaveRow('4')" id="save4">Save</button></td>
+    </tr>
+    <tr>
+        <td id="index5"> 5 </td>
+        <td id="name5"> Ghani </td>
+        <td id="class5"> Urdu </td>
+        <td><button onclick="deleteRow('5')" id="del5">Delete</button></td>
+        <td><button onclick="EditRow('5')" id="edit5">Edit</button></td>
+        <td><button onclick="SaveRow('5')" id="save5">Save</button></td>
+    </tr>
+  </table> -->
+
+<!-- //Chapter53-57 -->
+<!-- //1 -->
+<!-- Trigger the Modal -->
+<!-- <img id="myImg1" onclick="show(this)" src="images/modelimages/1.jpg" alt="Snow" style="width:100%;max-width:300px">
+<img id="myImg2" onclick="show(this)" src="images/modelimages/2.jpg" alt="Snow" style="width:100%;max-width:300px">
+<img id="myImg3" onclick="show(this)" src="images/modelimages/3.jpg" alt="Snow" style="width:100%;max-width:300px">
+<img id="myImg4" onclick="show(this)" src="images/modelimages/4.jpg" alt="Snow" style="width:100%;max-width:300px">
+<img id="myImg5" onclick="show(this)" src="images/modelimages/5.jpg" alt="Snow" style="width:100%;max-width:300px">
+<img id="myImg6" onclick="show(this)" src="images/modelimages/6.jpg" alt="Snow" style="width:100%;max-width:300px">
+<img id="myImg7" onclick="show(this)" src="images/modelimages/7.jpg" alt="Snow" style="width:100%;max-width:300px">
+<img id="myImg8" onclick="show(this)" src="images/modelimages/8.jpg" alt="Snow" style="width:100%;max-width:300px">
+<img id="myImg9" onclick="show(this)" src="images/modelimages/9.jpg" alt="Snow" style="width:100%;max-width:300px">
+<img id="myImg10" onclick="show(this)" src="images/modelimages/10.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
+
+<!-- The Modal -->
+<!-- <div id="myModal" class="modal"> -->
+<!-- The Close Button -->
+<!-- <span class="close">&times;</span> -->
+<!-- Modal Content (The Image) -->
+<!-- <img class="modal-content" id="img01"> -->
+<!-- </div> -->
+
+<!-- //2
+<p id="para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    In asperiores sit, tempora rem exercitationem vero officiis reprehenderit animi, et, 
+    ipsam incidunt. Non praesentium natus id dignissimos similique rerum enim voluptatibus!</p>
+    <button id="zoomin" onclick="ZoomIn()">ZoomIn</button> 
+    <button id="zoomout" onclick="ZoomOut()">ZoomOut</button> -->
+    
+<!-- //Chapter58-68
+<div><h1> DOM </h1><div id="form-content" class="content"><label for="first-name">First Name</label> <input type="text" id="first-name"/> <label for="last-name">Last Name</label> <input type="text" id="last-name"/> <label for="email">Email</label> <input type="text" id="email"/> </div><div id="main-content" class="content"><p class="render"> First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p><p class="render"> Country : Pakistan </p><p class="render"> contact : +92 300 1234567</p></div></div> -->
+
+
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
